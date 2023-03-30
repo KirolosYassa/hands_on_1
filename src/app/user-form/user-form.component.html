@@ -1,4 +1,20 @@
 <h2>Add user</h2>
 
 <h3>First Name</h3>
-<input type="text" />
+<input type="text" [(ngModel)]="firstName" />
+
+<h3>Second Name</h3>
+<input type="text" [(ngModel)]="secondName" />
+
+<h3>Display Name</h3>
+<input type="text" [(ngModel)]="displayName" />
+<br />
+<p>myform Details:-</p>
+<textarea cols="30" rows="10" disabled>
+myForm Value:
+{
+    "firstName" : "{{ firstName }}",
+    "secondName" : "{{ secondName }}",
+    "displayName" : "{{ displayName }}"
+}
+</textarea>
